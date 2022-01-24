@@ -1,22 +1,16 @@
 /*
- * @Description:
+ * @Description: main
  * @Autor: Espada
- * @Date: 2022-01-14 15:45:33
+ * @Date: 2022-01-21 11:47:15
  * @LastEditors: Espada
- * @LastEditTime: 2022-01-17 11:57:27
- * @FilePath: \earth\src\main.js
+ * @LastEditTime: 2022-01-24 17:09:15
+ * @FilePath: \earth3.0\src\main.js
  */
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
 import '@/assets/scss/index.scss'
 
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+createApp(App).use(store).use(router).mount('#app')

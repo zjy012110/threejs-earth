@@ -1,6 +1,6 @@
 # threejs-earth
 
-根据网络上的一个科技感旋转地球资源改造为vue项目
+根据网络上的一个科技感旋转地球资源改造为vue3.0项目
 
 ![演示效果](./static/image/earth.gif)
 

@@ -1,15 +1,12 @@
 /*
- * @Description: 页面路由
+ * @Description: 路由
  * @Autor: Espada
- * @Date: 2022-01-14 15:45:33
+ * @Date: 2022-01-21 11:47:15
  * @LastEditors: Espada
- * @LastEditTime: 2022-01-14 15:52:14
- * @FilePath: \earth\src\router\index.js
+ * @LastEditTime: 2022-01-24 17:06:57
+ * @FilePath: \earth3.0\src\router\index.js
  */
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -19,9 +16,8 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
